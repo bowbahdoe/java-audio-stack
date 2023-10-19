@@ -1,5 +1,7 @@
 # jlayer
 
+[![javadoc](https://javadoc.io/badge2/dev.mccue/jlayer/javadoc.svg)](https://javadoc.io/doc/dev.mccue/jlayer)
+
 This is a fork of the original `com.googlecode.soundlibs/jlayer` library which
 
 * Has a module-info
