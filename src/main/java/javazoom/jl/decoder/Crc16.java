@@ -41,7 +41,7 @@ public final class Crc16
   }
 
   /**
-   * Feed a bitstring to the crc calculation (0 < length <= 32).
+   * Feed a bitstring to the crc calculation (0 &lt; length &lt;= 32).
    */
   public void add_bits (int bitstring, int length)
   {

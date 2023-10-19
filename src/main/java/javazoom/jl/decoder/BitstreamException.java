@@ -25,13 +25,13 @@ package javazoom.jl.decoder;
  * when operations on a <code>Bitstream</code> fail. 
  * <p>
  * The exception provides details of the exception condition 
- * in two ways:
+ * in two ways:</p>
  * <ol><li>
  *		as an error-code describing the nature of the error
- * </li><br></br><li>
+ * </li><li>
  *		as the <code>Throwable</code> instance, if any, that was thrown
  *		indicating that an exceptional condition has occurred. 
- * </li></ol></p>
+ * </li></ol>
  * 
  * @since 0.0.6
  * @author MDM	12/12/99

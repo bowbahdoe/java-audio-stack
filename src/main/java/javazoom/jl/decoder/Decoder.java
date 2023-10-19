@@ -84,7 +84,7 @@ public class Decoder implements DecoderErrors
 	 * Creates a new <code>Decoder</code> instance with default 
 	 * parameters.
 	 * 
-	 * @param params	The <code>Params</code> instance that describes
+	 * @param params0	The <code>Params</code> instance that describes
 	 *					the customizable aspects of the decoder.  
 	 */
 	public Decoder(Params params0)
@@ -126,7 +126,7 @@ public class Decoder implements DecoderErrors
 	 * Decodes one frame from an MPEG audio bitstream.
 	 * 
 	 * @param header		The header describing the frame to decode.
-	 * @param bitstream		The bistream that provides the bits for te body of the frame. 
+	 * @param stream		The bistream that provides the bits for te body of the frame.
 	 * 
 	 * @return A SampleBuffer containing the decoded samples.
 	 */
@@ -165,7 +165,7 @@ public class Decoder implements DecoderErrors
 	 * by this decoder. This typically corresponds to the sample
 	 * rate encoded in the MPEG audio stream.
 	 * 
-	 * @param the sample rate (in Hz) of the samples written to the
+	 * @return the sample rate (in Hz) of the samples written to the
 	 *		output buffer when decoding. 
 	 */
 	public int getOutputFrequency()
