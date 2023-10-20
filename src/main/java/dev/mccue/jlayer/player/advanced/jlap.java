@@ -61,7 +61,7 @@ public class jlap
   {
     System.out.println("Usage: jla <filename>");
     System.out.println("");
-    System.out.println(" e.g. : java javazoom.jl.player.advanced.jlap localfile.mp3");
+    System.out.println(" e.g. : java dev.mccue.jlayer.player.advanced.jlap localfile.mp3");
   }
 
   public static AdvancedPlayer playMp3(File mp3, PlaybackListener listener) throws IOException, JavaLayerException
