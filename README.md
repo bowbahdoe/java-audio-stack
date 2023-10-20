@@ -16,7 +16,7 @@ This is a fork of the original `com.googlecode.soundlibs/jlayer` library which
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jlayer</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 

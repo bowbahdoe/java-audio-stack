@@ -6,7 +6,7 @@
 
     <groupId>dev.mccue</groupId>
     <artifactId>jlayer</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
     <packaging>jar</packaging>
 
     <properties>
@@ -43,13 +43,6 @@
         <url>http://github.com/bowbahdoe/jlayer/tree/main</url>
     </scm>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.googlecode.soundlibs</groupId>
-            <artifactId>jlayer</artifactId>
-            <version>1.0.1.4</version>
-        </dependency>
-    </dependencies>
     <build>
         <plugins>
             <plugin>
