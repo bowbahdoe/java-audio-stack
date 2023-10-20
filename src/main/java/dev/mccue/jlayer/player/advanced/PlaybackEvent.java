@@ -25,8 +25,8 @@ package dev.mccue.jlayer.player.advanced;
  */
 public class PlaybackEvent
 {
-	public static int STOPPED = 1;
-	public static int STARTED = 2;
+	public static final int STOPPED = 1;
+	public static final int STARTED = 2;
 
 	private AdvancedPlayer source;
 	private int frame;
