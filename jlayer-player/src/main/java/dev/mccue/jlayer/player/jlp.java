@@ -37,7 +37,7 @@ import java.net.URL;
  *
  * @author Mat McGowan (mdm@techie.com)
  */
-public class jlp
+public final class jlp
 {
 	private String fFilename = null;
 	private boolean remote = false;

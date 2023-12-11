@@ -20,9 +20,9 @@
 
 package dev.mccue.jlayer.converter;
 
-import dev.mccue.jlayer.decoder.*;
-
 import java.io.*;
+
+import dev.mccue.jlayer.decoder.*;
 
 /**
  * The <code>Converter</code> class implements the conversion of
