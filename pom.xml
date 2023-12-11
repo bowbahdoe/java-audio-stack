@@ -125,17 +125,16 @@
                                                 <closeRepository>true</closeRepository>
                                                 <releaseRepository>true</releaseRepository>
                                                 <stagingRepositories>target/staging-deploy</stagingRepositories>
+                                                <artifactOverrides>
+                                                    <artifactOverride>
+                                                        <groupId>dev.mccue</groupId>
+                                                        <artifactId>jlayer-parent</artifactId>
+                                                        <sourceJar>false</sourceJar>
+                                                        <javadocJar>false</javadocJar>
+                                                    </artifactOverride>
+                                                </artifactOverrides>
                                             </maven-central>
                                         </nexus2>
-                                        <artifactOverrides>
-                                            <artifactOverride>
-                                                <groupId>dev.mccue</groupId>
-                                                <artifactId>jlayer-parent</artifactId>
-                                                <sourceJar>false</sourceJar>
-                                                <javadocJar>false</javadocJar>
-                                            </artifactOverride>
-                                        </artifactOverrides>
-
                                     </maven>
                                 </deploy>
                             </jreleaser>
