@@ -26,6 +26,7 @@
     <name>jlayer-parent</name>
     <description>com.googlecode.soundlibs/jlayer repackaged and modernized</description>
     <url>https://github.com/bowbahdoe/jlayer</url>
+    <inceptionYear>2023</inceptionYear>
 
     <developers>
         <developer>
