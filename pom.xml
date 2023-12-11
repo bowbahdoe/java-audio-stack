@@ -6,7 +6,7 @@
 
     <groupId>dev.mccue</groupId>
     <artifactId>jlayer-parent</artifactId>
-    <version>0.0.6</version>
+    <version>0.0.5</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <jlayer.version>0.0.6</jlayer.version>
+        <jlayer.version>0.0.5</jlayer.version>
     </properties>
 
     <name>jlayer-parent</name>

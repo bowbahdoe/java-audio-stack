@@ -11,7 +11,7 @@
     <parent>
         <groupId>dev.mccue</groupId>
         <artifactId>jlayer-parent</artifactId>
-        <version>0.0.6</version>
+        <version>0.0.5</version>
     </parent>
 
     <name>jlayer-decoder</name>
