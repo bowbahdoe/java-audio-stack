@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.mccue</groupId>
-    <artifactId>jlayer-parent</artifactId>
+    <artifactId>java-audio-parent</artifactId>
     <version>0.0.5</version>
     <packaging>pom</packaging>
 
@@ -23,9 +23,9 @@
         <jlayer.version>0.0.5</jlayer.version>
     </properties>
 
-    <name>jlayer-parent</name>
-    <description>com.googlecode.soundlibs/jlayer repackaged and modernized</description>
-    <url>https://github.com/bowbahdoe/jlayer</url>
+    <name>java-audio-parent</name>
+    <description>Repackaged and modularized versions of otherwise abandoned audio libraries</description>
+    <url>https://github.com/bowbahdoe/java-audio-stack</url>
     <inceptionYear>2023</inceptionYear>
 
     <developers>
@@ -36,15 +36,6 @@
             <organizationUrl>https://www.mccue.dev</organizationUrl>
         </developer>
     </developers>
-
-    <!-- Originally licensed under LGPL https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html -->
-    <licenses>
-        <license>
-            <name>GNU Lesser General Public License (LGPL), Version 2.1</name>
-            <url>http://www.fsf.org/licensing/licenses/lgpl.txt</url>
-            <distribution>repo</distribution>
-        </license>
-    </licenses>
 
     <scm>
         <connection>scm:git:git://github.com/bowbahdoe/jlayer.git</connection>
