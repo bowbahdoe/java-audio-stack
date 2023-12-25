@@ -42,6 +42,15 @@
         <developerConnection>scm:git:ssh://github.com:bowbahdoe/jlayer.git</developerConnection>
         <url>http://github.com/bowbahdoe/jlayer/tree/main</url>
     </scm>
+    <!-- Originally licensed under LGPL https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html -->
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License (LGPL), Version 2.1</name>
+            <url>http://www.fsf.org/licensing/licenses/lgpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
 
     <build>
         <plugins>
