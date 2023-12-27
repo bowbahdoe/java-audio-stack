@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>jorbis</artifactId>
+    <version>0.0.6</version>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>dev.mccue</groupId>
+        <artifactId>java-audio-parent</artifactId>
+        <version>0.0.6</version>
+    </parent>
+
+    <name>jorbis</name>
+    <description>com.googlecode.soundlibs/jorbis repackaged and modernized</description>
+    <url>https://github.com/bowbahdoe/jlayer</url>
+
+    <developers>
+        <developer>
+            <name>Ethan McCue</name>
+            <email>ethan@mccue.dev</email>
+            <organization>McCue Software Solutions</organization>
+            <organizationUrl>https://www.mccue.dev</organizationUrl>
+        </developer>
+    </developers>
+
+    <!-- Originally licensed under LGPL https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html -->
+    <licenses>
+        <license>
+            <name>GNU Lesser General Public License (LGPL), Version 2.1</name>
+            <url>http://www.fsf.org/licensing/licenses/lgpl.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git://github.com/bowbahdoe/jlayer.git</connection>
+        <developerConnection>scm:git:ssh://github.com:bowbahdoe/jlayer.git</developerConnection>
+        <url>http://github.com/bowbahdoe/jlayer/tree/main</url>
+    </scm>
+
+    <dependencies>
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>jogg</artifactId>
+            <version>${jlayer.version}</version>
+        </dependency>
+    </dependencies>
+
+    <profiles>
+        <profile>
+            <id>release</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <version>3.6.3</version>
+                        <executions>
+                            <execution>
+                                <id>attach-javadoc</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <doclint>none</doclint>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>3.2.1</version>
+                        <executions>
+                            <execution>
+                                <id>attach-source</id>
+                                <goals>
+                                    <goal>jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.jreleaser</groupId>
+                        <artifactId>jreleaser-maven-plugin</artifactId>
+                        <version>1.9.0</version>
+                        <inherited>false</inherited>
+                        <configuration>
+                            <jreleaser>
+                                <signing>
+                                    <active>ALWAYS</active>
+                                    <armored>true</armored>
+                                </signing>
+                                <deploy>
+                                    <maven>
+                                        <nexus2>
+                                            <maven-central>
+                                                <active>ALWAYS</active>
+                                                <url>https://s01.oss.sonatype.org/service/local</url>;
+                                                <closeRepository>false</closeRepository>
+                                                <releaseRepository>false</releaseRepository>
+                                                <stagingRepositories>target/staging-deploy</stagingRepositories>
+                                            </maven-central>
+                                        </nexus2>
+                                    </maven>
+                                </deploy>
+                            </jreleaser>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
+</project>

@@ -6,7 +6,7 @@
 
     <groupId>dev.mccue</groupId>
     <artifactId>java-audio-parent</artifactId>
-    <version>0.0.5</version>
+    <version>0.0.6</version>
     <packaging>pom</packaging>
 
     <modules>
@@ -14,13 +14,18 @@
         <module>jlayer-converter</module>
         <module>jlayer-decoder</module>
         <module>jlayer-player</module>
+        <module>tritonus-share</module>
+        <!-- <module>tritonus-all</module> -->
+        <module>jogg</module>
+        <module>jorbis</module>
+        <module>mp3spi</module>
     </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <jlayer.version>0.0.5</jlayer.version>
+        <jlayer.version>0.0.6</jlayer.version>
     </properties>
 
     <name>java-audio-parent</name>
