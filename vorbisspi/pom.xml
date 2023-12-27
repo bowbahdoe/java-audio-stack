@@ -4,35 +4,19 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>dev.mccue</groupId>
-    <artifactId>java-audio-parent</artifactId>
+    <artifactId>vorbisspi</artifactId>
     <version>0.0.6</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
 
-    <modules>
-        <module>jlayer</module>
-        <module>jlayer-converter</module>
-        <module>jlayer-decoder</module>
-        <module>jlayer-player</module>
-        <module>tritonus-share</module>
-        <!-- <module>tritonus-all</module> -->
-        <module>jogg</module>
-        <module>jorbis</module>
-        <module>mp3spi</module>
-        <module>vorbisspi</module>
-    </modules>
+    <parent>
+        <groupId>dev.mccue</groupId>
+        <artifactId>java-audio-parent</artifactId>
+        <version>0.0.6</version>
+    </parent>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
-        <jlayer.version>0.0.6</jlayer.version>
-    </properties>
-
-    <name>java-audio-parent</name>
-    <description>Repackaged and modularized versions of otherwise abandoned audio libraries</description>
-    <url>https://github.com/bowbahdoe/java-audio-stack</url>
-    <inceptionYear>2023</inceptionYear>
+    <name>vorbisspi</name>
+    <description>com.googlecode.soundlibs/vorbisspi repackaged and modernized</description>
+    <url>https://github.com/bowbahdoe/jlayer</url>
 
     <developers>
         <developer>
@@ -43,11 +27,6 @@
         </developer>
     </developers>
 
-    <scm>
-        <connection>scm:git:git://github.com/bowbahdoe/jlayer.git</connection>
-        <developerConnection>scm:git:ssh://github.com:bowbahdoe/jlayer.git</developerConnection>
-        <url>http://github.com/bowbahdoe/jlayer/tree/main</url>
-    </scm>
     <!-- Originally licensed under LGPL https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html -->
     <licenses>
         <license>
@@ -57,26 +36,30 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git://github.com/bowbahdoe/jlayer.git</connection>
+        <developerConnection>scm:git:ssh://github.com:bowbahdoe/jlayer.git</developerConnection>
+        <url>http://github.com/bowbahdoe/jlayer/tree/main</url>
+    </scm>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>3.3.1</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <compilerArgs>
-                        <arg>-Xlint:all</arg>
-                    </compilerArgs>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
+    <dependencies>
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>tritonus-share</artifactId>
+            <version>${jlayer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>jogg</artifactId>
+            <version>${jlayer.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.mccue</groupId>
+            <artifactId>jorbis</artifactId>
+            <version>${jlayer.version}</version>
+        </dependency>
+    </dependencies>
+
     <profiles>
         <profile>
             <id>release</id>
