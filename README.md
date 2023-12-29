@@ -26,6 +26,15 @@ Most people will just want to include the artifacts for `mp3spi` and/or `vorbiss
 
 From there, load up an audio file. [There are a bunch of old tutorials online for that](https://odoepner.wordpress.com/2013/07/19/play-mp3-or-ogg-using-javax-sound-sampled-mp3spi-vorbisspi/).
 
+If you are using the module system, all the modules here are under `dev.mccue`, so
+you would do the following.
+
+```java
+module example {
+    requires dev.mccue.mp3spi;
+    requires dev.mccue.vorbisspi;
+}
+```
 
 ## What is this
 
@@ -182,6 +191,13 @@ Coordinates for constituent modules. Most won't have a need to touch these.
     <version>0.0.7</version>
 </dependency>
 ```
+```java
+module example {
+    requires dev.mccue.jlayer;
+}
+```
+
+----
 
 ```xml
 <dependency>
@@ -190,7 +206,13 @@ Coordinates for constituent modules. Most won't have a need to touch these.
     <version>0.0.7</version>
 </dependency>
 ```
+```java
+module example {
+    requires dev.mccue.jlayer.decoder;
+}
+```
 
+----
 
 ```xml
 <dependency>
@@ -200,6 +222,14 @@ Coordinates for constituent modules. Most won't have a need to touch these.
 </dependency>
 ```
 
+```java
+module example {
+    requires dev.mccue.jlayer.converter;
+}
+```
+
+----
+
 ```xml
 <dependency>
     <groupId>dev.mccue</groupId>
@@ -207,7 +237,13 @@ Coordinates for constituent modules. Most won't have a need to touch these.
     <version>0.0.7</version>
 </dependency>
 ```
+```java
+module example {
+    requires dev.mccue.jlayer.player;
+}
+```
 
+----
 ```xml
 <dependency>
     <groupId>dev.mccue</groupId>
@@ -215,7 +251,13 @@ Coordinates for constituent modules. Most won't have a need to touch these.
     <version>0.0.7</version>
 </dependency>
 ```
+```java
+module example {
+    requires dev.mccue.jogg;
+}
+```
 
+----
 ```xml
 <dependency>
     <groupId>dev.mccue</groupId>
@@ -224,10 +266,23 @@ Coordinates for constituent modules. Most won't have a need to touch these.
 </dependency>
 ```
 
+```java
+module example {
+    requires dev.mccue.jorbis;
+}
+```
+
+----
 ```xml
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>tritonus-share</artifactId>
     <version>0.0.7</version>
 </dependency>
+```
+
+```java
+module example {
+    requires dev.mccue.tritonus.share;
+}
 ```
