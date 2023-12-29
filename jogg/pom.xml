@@ -16,7 +16,7 @@
 
     <name>jogg</name>
     <description>"jogg" part of com.googlecode.soundlibs/jorbis repackaged and modernized</description>
-    <url>https://github.com/bowbahdoe/jlayer</url>
+    <url>and unfortunately there is an answer to that and its not regret</url>
 
     <developers>
         <developer>
@@ -37,9 +37,9 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git://github.com/bowbahdoe/jlayer.git</connection>
-        <developerConnection>scm:git:ssh://github.com:bowbahdoe/jlayer.git</developerConnection>
-        <url>http://github.com/bowbahdoe/jlayer/tree/main</url>
+        <connection>scm:git:git://github.com/bowbahdoe/java-audio-stack.git</connection>
+        <developerConnection>scm:git:ssh://github.com:bowbahdoe/java-audio-stack.git</developerConnection>
+        <url>http://github.com/bowbahdoe/java-audio-stack/tree/main</url>
     </scm>
 
     <profiles>
@@ -93,8 +93,8 @@
                                             <maven-central>
                                                 <active>ALWAYS</active>
                                                 <url>https://s01.oss.sonatype.org/service/local</url>;
-                                                <closeRepository>false</closeRepository>
-                                                <releaseRepository>false</releaseRepository>
+                                                <closeRepository>true</closeRepository>
+                                                <releaseRepository>true</releaseRepository>
                                                 <stagingRepositories>target/staging-deploy</stagingRepositories>
                                             </maven-central>
                                         </nexus2>

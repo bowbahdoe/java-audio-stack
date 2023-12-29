@@ -15,7 +15,6 @@
         <module>jlayer-decoder</module>
         <module>jlayer-player</module>
         <module>tritonus-share</module>
-        <!-- <module>tritonus-all</module> -->
         <module>jogg</module>
         <module>jorbis</module>
         <module>mp3spi</module>
@@ -27,6 +26,14 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <jlayer.version>0.0.6</jlayer.version>
+        <jlayer.converter.version>0.0.6</jlayer.converter.version>
+        <jlayer.decoder.version>0.0.6</jlayer.decoder.version>
+        <jlayer.player.version>0.0.6</jlayer.player.version>
+        <tritonus.share.version>0.0.6</tritonus.share.version>
+        <jogg.version>0.0.6</jogg.version>
+        <jorbis.version>0.0.6</jorbis.version>
+        <mp3spi.version>0.0.6</mp3spi.version>
+        <vorbisspi.version>0.0.6</vorbisspi.version>
     </properties>
 
     <name>java-audio-parent</name>
@@ -44,9 +51,9 @@
     </developers>
 
     <scm>
-        <connection>scm:git:git://github.com/bowbahdoe/jlayer.git</connection>
-        <developerConnection>scm:git:ssh://github.com:bowbahdoe/jlayer.git</developerConnection>
-        <url>http://github.com/bowbahdoe/jlayer/tree/main</url>
+        <connection>scm:git:git://github.com/bowbahdoe/java-audio-stack.git</connection>
+        <developerConnection>scm:git:ssh://github.com:bowbahdoe/java-audio-stack.git</developerConnection>
+        <url>http://github.com/bowbahdoe/java-audio-stack/tree/main</url>
     </scm>
     <!-- Originally licensed under LGPL https://web.archive.org/web/20210108055829/http://www.javazoom.net/javalayer/javalayer.html -->
     <licenses>
@@ -56,6 +63,56 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>jlayer</artifactId>
+                <version>${jlayer.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>jlayer-decoder</artifactId>
+                <version>${jlayer.decoder.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>jlayer-player</artifactId>
+                <version>${jlayer.player.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>jlayer-converter</artifactId>
+                <version>${jlayer.converter.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>tritonus-share</artifactId>
+                <version>${tritonus.share.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>jogg</artifactId>
+                <version>${jogg.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>jorbis</artifactId>
+                <version>${jorbis.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>mp3spi</artifactId>
+                <version>${mp3spi.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>dev.mccue</groupId>
+                <artifactId>vorbisspi</artifactId>
+                <version>${vorbisspi.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 
     <build>
@@ -128,8 +185,8 @@
                                             <maven-central>
                                                 <active>ALWAYS</active>
                                                 <url>https://s01.oss.sonatype.org/service/local</url>;
-                                                <closeRepository>false</closeRepository>
-                                                <releaseRepository>false</releaseRepository>
+                                                <closeRepository>true</closeRepository>
+                                                <releaseRepository>true</releaseRepository>
                                                 <stagingRepositories>target/staging-deploy</stagingRepositories>
                                             </maven-central>
                                         </nexus2>
