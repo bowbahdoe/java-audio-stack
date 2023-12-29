@@ -24,6 +24,8 @@ Most people will just want to include the artifacts for `mp3spi` and/or `vorbiss
 </dependency>
 ```
 
+From there, load up an audio file. [There are a bunch of old tutorials online for that](https://odoepner.wordpress.com/2013/07/19/play-mp3-or-ogg-using-javax-sound-sampled-mp3spi-vorbisspi/).
+
 
 ## What is this
 
