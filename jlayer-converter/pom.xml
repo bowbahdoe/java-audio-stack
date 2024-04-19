@@ -88,10 +88,14 @@
                     <plugin>
                         <groupId>org.jreleaser</groupId>
                         <artifactId>jreleaser-maven-plugin</artifactId>
-                        <version>1.9.0</version>
+                        <version>1.11.0</version>
                         <inherited>false</inherited>
                         <configuration>
                             <jreleaser>
+                                <project>
+                                    <copyright>2024</copyright>
+                                    <versionPattern><type>CHRONVER</type></versionPattern>
+                                </project>
                                 <signing>
                                     <active>ALWAYS</active>
                                     <armored>true</armored>
