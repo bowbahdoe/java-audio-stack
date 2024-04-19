@@ -12,7 +12,7 @@ Most people will just want to include the artifacts for `mp3spi` and/or `vorbiss
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>mp3spi</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 
@@ -20,7 +20,7 @@ Most people will just want to include the artifacts for `mp3spi` and/or `vorbiss
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>vorbisspi</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 
@@ -188,7 +188,7 @@ Coordinates for constituent modules. Most won't have a need to touch these.
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jlayer</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 ```java
@@ -203,7 +203,7 @@ module example {
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jlayer-decoder</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 ```java
@@ -218,7 +218,7 @@ module example {
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jlayer-converter</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 
@@ -234,7 +234,7 @@ module example {
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jlayer-player</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 ```java
@@ -248,7 +248,7 @@ module example {
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jogg</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 ```java
@@ -262,7 +262,7 @@ module example {
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>jorbis</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 
@@ -277,7 +277,7 @@ module example {
 <dependency>
     <groupId>dev.mccue</groupId>
     <artifactId>tritonus-share</artifactId>
-    <version>0.0.7</version>
+    <version>2024.04.19</version>
 </dependency>
 ```
 
